@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@theme {
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-caveat: "Caveat", cursive;
+  --font-great-vibes: "Great Vibes", cursive;
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  --color-cream-50: #F5EBDC;
+  --color-cream-100: #EFE4D0;
+  --color-cream-200: #E6D5BC;
+  --color-cream-250: #DCD0BA;
+  --color-latte: #D9C2A3;
+  --color-caramel: #A67B5B;
+  --color-brown-700: #5A3825;
+  --color-ink-800: #2B1E19;
+  --color-ink-950: #141011;
+  --color-muted-accent: #8A5F49;
+}
+
+@layer base {
+  body {
+    background-color: #F5EBDC;
+    color: #2B1E19;
+    font-family: var(--font-dm-sans), sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.paper-texture {
+  background-color: #F5EBDC;
+  background-image: radial-gradient(rgba(90, 56, 37, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.luxury-border {
+  border-image: linear-gradient(to bottom right, #5A3825, #A67B5B, #D9C2A3) 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EBDC;
+}
+::-webkit-scrollbar-thumb {
+  background: #A67B5B;
+  border-radius: 3px;
+}
